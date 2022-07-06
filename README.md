@@ -34,7 +34,7 @@ The model is trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/comm
 
 ### How to run the code
 
-Use the `FCN+MPM.ipynb` notebook using [Jupyter](https://jupyter.org/)!
+Use the `FCN+MPM.ipynb` notebook using [Jupyter](https://jupyter.org/) and refer to the file `requirements.txt`.
 
 
 ## References
