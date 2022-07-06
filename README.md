@@ -32,21 +32,21 @@ M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of 
 
 @ARTICLE{9676578,
 
-author={Pastorino, Martina and Moser, Gabriele and Serpico, Sebastiano B. and Zerubia, Josiane},
+  author={Pastorino, Martina and Moser, Gabriele and Serpico, Sebastiano B. and Zerubia, Josiane},
 
-journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
 
-title={Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models}, 
+  title={Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models}, 
 
-year={2022},
+  year={2022},
 
-volume={60},
+  volume={60},
 
-number={},
+  number={},
 
-pages={1-16},
+  pages={1-16},
 
-doi={10.1109/TGRS.2022.3141996}}
+  doi={10.1109/TGRS.2022.3141996}}
 
 
 ## License
