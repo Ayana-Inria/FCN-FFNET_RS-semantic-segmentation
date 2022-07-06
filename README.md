@@ -40,7 +40,8 @@ When using this work, please cite our IEEE TGRS Journal paper:
 
 M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-16, 2022, Art no. 5407116, doi: [10.1109/TGRS.2022.3141996](https://ieeexplore.ieee.org/document/9676578). 
 
-@ARTICLE{9676578,
+```
+@ARTICLE{pastorino_tgrs22,
   author={Pastorino, Martina and Moser, Gabriele and Serpico, Sebastiano B. and Zerubia, Josiane},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models}, 
@@ -49,7 +50,7 @@ M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of 
   number={},
   pages={1-16},
   doi={10.1109/TGRS.2022.3141996}}
-
+```
 
 ## License
 
