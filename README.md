@@ -28,7 +28,7 @@ ADD IMG
   ...
 
 3. Ensemble learning
-  RF is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the `[scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)` Python implementation.
+  RF is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the [`scikit-learn`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) Python implementation.
   
 
 ### Data
