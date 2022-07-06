@@ -53,7 +53,7 @@ M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of 
 
 ## License
 
-Code (scripts and Jupyter notebooks) are released under the GPLv3 license. See `LICENSE.md` for more details.
+The code is released under the GPLv3 license. See `LICENSE.md` for more details.
 
 ## Acknowledgements
 
