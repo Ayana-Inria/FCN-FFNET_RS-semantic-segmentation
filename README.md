@@ -61,8 +61,7 @@ The code is released under the GPLv3 license. See `LICENSE.md` for more details.
 
 ## Acknowledgements
 
-ADD TEXT
-
+This work was conducted during my joint PhD at [INRIA](https://team.inria.fr/ayana/team-members/), d'Universit\`e C\^ote d'Azur and at the [University of Genoa](http://phd-stiet.diten.unige.it/). 
 The ISPRS 2D Semantic Labeling Challenge Datasets were provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
-
+The code to deal with the ISPRS dataset derives from the GitHub repository [Deep learning for Earth Observation](https://github.com/nshaud/DeepNetsForEO).
 
