@@ -1,8 +1,8 @@
 # FCN and Hierarchical PGM for Remote Sensing Image Classification
 
 
-This repository contains the code related to the papers 
-
+This repository contains the code related to the papers ADD IGARSS21 IGARSS22 TGRS22 EUSIPCO21  
+Pytorch
 ## Content
 
 ### Context
@@ -11,13 +11,11 @@ Deep learning is currently the dominant approach to image classification and seg
 
 ### Architecture
 
-
+ADD TEXT
 
 ### Data
 
- 
-
-
+ADD TEXT
 
 
 
@@ -28,12 +26,29 @@ Use the `FCN+MPM.ipynb` notebook using [Jupyter](https://jupyter.org/)!
 
 ## References
 
+When using this work, please cite our IEEE TGRS Journal paper:
+
+[https://ieeexplore.ieee.org/document/9676578](https://ieeexplore.ieee.org/document/9676578) M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-16, 2022, Art no. 5407116, doi: [10.1109/TGRS.2022.3141996](https://ieeexplore.ieee.org/document/9676578). 
+
+@ARTICLE{9676578,
+  author={Pastorino, Martina and Moser, Gabriele and Serpico, Sebastiano B. and Zerubia, Josiane},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models}, 
+  year={2022},
+  volume={60},
+  number={},
+  pages={1-16},
+  doi={10.1109/TGRS.2022.3141996}}
 
 
 ## License
 
+ADD TEXT
+
 ## Acknowledgements
 
-The ISPRS 2D Semantic Labeling Challenge Dataset were provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
+ADD TEXT
+
+The ISPRS 2D Semantic Labeling Challenge Datasets were provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
 
 
