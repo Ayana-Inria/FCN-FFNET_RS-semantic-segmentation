@@ -15,7 +15,7 @@ ADD TEXT
 
 ### Data
 
-ADD TEXT
+Our example models are trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](http://www2.isprs.org/potsdam-2d-semantic-labeling.html). We use the IRRG tiles (8bit format)
 
 
 
@@ -43,7 +43,7 @@ When using this work, please cite our IEEE TGRS Journal paper:
 
 ## License
 
-ADD TEXT
+Code (scripts and Jupyter notebooks) are released under the GPLv3 license. See `LICENSE.md` for more details.
 
 ## Acknowledgements
 
