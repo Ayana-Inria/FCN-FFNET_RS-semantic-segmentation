@@ -1,8 +1,16 @@
 # FCN and Hierarchical PGM for Remote Sensing Image Classification
 
 
-This repository contains the code related to the papers ADD IGARSS21 IGARSS22 TGRS22 EUSIPCO21  
-Pytorch
+This repository contains the code related to the papers:  
+
+M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-16, 2022, Art no. 5407116, doi: [10.1109/TGRS.2022.3141996](https://ieeexplore.ieee.org/document/9676578).
+
+M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote Sensing Images Combining Hierarchical Probabilistic Graphical Models and Deep Convolutional Neural Networks," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 8672-8675, doi: [10.1109/IGARSS47720.2021.9553253](https://ieeexplore.ieee.org/document/9553253).
+
+M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Hierarchical Probabilistic Graphical Models and Deep Convolutional Neural Networks for Remote Sensing Image Classification," 2021 29th European Signal Processing Conference (EUSIPCO), 2021, pp. 1740-1744, doi: [10.23919/EUSIPCO54536.2021.9616179](https://ieeexplore.ieee.org/document/9616179).
+
+MORE DETAILS ON THE LIB
+
 ## Content
 
 ### Context
