@@ -21,16 +21,13 @@ ADD IMG
 
 ### Architecture
 
-1. Deep learning architecture
-  Any FCN can be integrated in the proposed method. Here, we provide a [U-Net](https://github.com/milesial/Pytorch-UNet) implementation (Ronneberger et al.,  2015) in [PyTorch](https://pytorch.org).
+1. **Deep learning architecture**: any FCN can be integrated in the proposed method. Here, we provide a [U-Net](https://github.com/milesial/Pytorch-UNet) implementation (Ronneberger et al.,  2015) in [PyTorch](https://pytorch.org).
 
-2. Hierarchical PGM
-  ...
+2. **Hierarchical PGM**: combination of hierarchical Markov random fields (MRF) and a causal formalization of planar MRFs to model multiresolution and spatial-contextual information.
 
-3. Ensemble learning
-  RF is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the [`scikit-learn`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) Python implementation.
+3. **Ensemble learning**: random forest (RF) is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the [`scikit-learn`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) Python implementation.
   
-
+4. **MPM criterior**: inference algorithm advantageous for multiresolution applications.
 ### Data
 
 The model is trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](http://www2.isprs.org/potsdam-2d-semantic-labeling.html). The two datasets consist of VHR optical images (spatial resolutions of 9 and 5cm, respectively), we used the IRRG channels. They can be downloaded on [Kaggle](https://www.kaggle.com/datasets/bkfateam/potsdamvaihingen) and should be inserted in the folder `/input`.
