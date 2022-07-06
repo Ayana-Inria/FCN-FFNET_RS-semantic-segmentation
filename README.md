@@ -23,7 +23,7 @@ ADD IMG
 
 1. **Deep learning architecture**: any FCN can be integrated in the proposed method. Here, we provide a [U-Net](https://github.com/milesial/Pytorch-UNet) implementation (Ronneberger et al.,  2015) in [PyTorch](https://pytorch.org).
 
-2. **Hierarchical PGM**: combination of hierarchical Markov random fields (MRF) and a causal formalization of planar MRFs to model multiresolution and spatial-contextual information.
+2. **Hierarchical PGM**: combination of a hierarchical Markov random field (MRF) and a causal formalization of planar MRFs to model multiresolution and spatial-contextual information.
 
 3. **Ensemble learning**: random forest (RF) is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the [`scikit-learn`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) Python implementation.
   
