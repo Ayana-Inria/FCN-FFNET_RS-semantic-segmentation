@@ -1,13 +1,9 @@
-# FCN and Hierarchical PGM for Remote Sensing Image Classification
+# FCN and Fully Connected NN for Remote Sensing Image Classification
 
 
 This repository contains the code related to the papers:  
 
-M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-16, 2022, Art no. 5407116, doi: [10.1109/TGRS.2022.3141996](https://ieeexplore.ieee.org/document/9676578).
-
-M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote Sensing Images Combining Hierarchical Probabilistic Graphical Models and Deep Convolutional Neural Networks," 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021, pp. 8672-8675, doi: [10.1109/IGARSS47720.2021.9553253](https://ieeexplore.ieee.org/document/9553253).
-
-M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Hierarchical Probabilistic Graphical Models and Deep Convolutional Neural Networks for Remote Sensing Image Classification," 2021 29th European Signal Processing Conference (EUSIPCO), 2021, pp. 1740-1744, doi: [10.23919/EUSIPCO54536.2021.9616179](https://ieeexplore.ieee.org/document/9616179).
+M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images," 2022 IEEE International Conference on Image Processing, 2022, [https://hal.inria.fr/hal-03720693](https://hal.inria.fr/hal-03720693).
 
 MORE DETAILS ON THE LIB
 
@@ -15,17 +11,13 @@ MORE DETAILS ON THE LIB
 
 ### Context
 
-Deep learning is currently the dominant approach to image classification and segmentation, but the performances of deep learning methods are remarkably influenced by the quantity and quality of the ground truth (GT) used for training. The main idea is to combine a specific type of deep convolutional neural networks (CNNs), namely, fully convolutional networks (FCNs), with probabilistic graphical models (PGMs). Our method takes advantage of the intrinsic multiscale behavior of FCNs to deal with multiscale data representations and to connect them to a hierarchical Markov model (e.g., making use of a quadtree). As a consequence, the spatial information present in the data is better exploited, allowing a reduced sensitivity to GT incompleteness to be obtained. The marginal posterior mode (MPM) criterion is used for inference in the proposed framework.
+ADD FEW LINES
 
 ADD IMG
 
 ### Architecture
 
-1. **Deep learning architecture**: any FCN can be integrated in the proposed method. Here, we provide a [U-Net](https://github.com/milesial/Pytorch-UNet) implementation (Ronneberger et al.,  2015) in [PyTorch](https://pytorch.org).
-
-2. **Hierarchical PGM**: combination of a hierarchical Markov random field (MRF) and a causal formalization of planar MRFs to model multiresolution and spatial-contextual information, implemented in Python.
-
-3. **Ensemble learning**: random forest (RF) is used to link the representation extracted by the FCN and the Bayesian inference structure of the PGM. We used the [`scikit-learn`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) Python implementation.
+ADD INFO
   
 ### Data
 
@@ -34,25 +26,26 @@ The model is trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/comm
 
 ### How to run the code
 
-Use the `FCN+MPM.ipynb` notebook using [Jupyter](https://jupyter.org/) and refer to the file `requirements.txt`.
+Use the `notebook.ipynb` notebook using [Jupyter](https://jupyter.org/) and refer to the file `requirements.txt`.
 
+ADD REQUIREMENTS
 
 ## References
 
 When using this work, please cite our IEEE TGRS Journal paper:
 
-M. Pastorino, G. Moser, S. B. Serpico and J. Zerubia, "Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models," in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-16, 2022, Art no. 5407116, doi: [10.1109/TGRS.2022.3141996](https://ieeexplore.ieee.org/document/9676578). 
+M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images," in IEEE International Conference on Image Processing, Bordeaux, France, 2022. 
 
 ```
-@ARTICLE{pastorino_tgrs22,
+@ARTICLE{pastorino_icip22,
   author={Pastorino, Martina and Moser, Gabriele and Serpico, Sebastiano B. and Zerubia, Josiane},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Semantic Segmentation of Remote-Sensing Images Through Fully Convolutional Neural Networks and Hierarchical Probabilistic Graphical Models}, 
+  journal={IEEE International Conference on Image Processing}, 
+  title={Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images}, 
   year={2022},
-  volume={60},
+  volume={},
   number={},
-  pages={1-16},
-  doi={10.1109/TGRS.2022.3141996}}
+  pages={},
+  doi={}}
 ```
 
 ## License
@@ -61,7 +54,7 @@ The code is released under the GPLv3 license. See `LICENSE.md` for more details.
 
 ## Acknowledgements
 
-This work was conducted during my joint PhD at [INRIA](https://team.inria.fr/ayana/team-members/), d'Universit\`e C\^ote d'Azur and at the [University of Genoa](http://phd-stiet.diten.unige.it/). 
+This work was conducted during my joint PhD at [INRIA](https://team.inria.fr/ayana/team-members/), d'Université Côte d'Azur and at the [University of Genoa](http://phd-stiet.diten.unige.it/). 
 The ISPRS 2D Semantic Labeling Challenge Datasets were provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
 The code to deal with the ISPRS dataset derives from the GitHub repository [Deep learning for Earth Observation](https://github.com/nshaud/DeepNetsForEO).
 
