@@ -1,7 +1,7 @@
 # FCN and Fully Connected NN for Remote Sensing Image Classification
 
 
-This repository contains the code related to the papers:  
+This repository contains the code related to the paper:  
 
 M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images," 2022 IEEE International Conference on Image Processing, 2022, [https://hal.inria.fr/hal-03720693](https://hal.inria.fr/hal-03720693).
 
