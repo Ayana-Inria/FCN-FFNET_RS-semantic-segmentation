@@ -23,7 +23,7 @@ from net.test_network import test
 import cv2
 
 
-def train(net, optimizer, epochs, save_epoch, weights, train_loader, batch_size, window_size, scheduler=None):
+def train(net, optimizer, epochs, save_epoch, weights, train_loader, batch_size, window_size, output_folder, scheduler=None):
     losses = np.zeros(1000000)
     mean_losses = np.zeros(100000000)
     weights = weights.cuda()
@@ -46,9 +46,9 @@ def train(net, optimizer, epochs, save_epoch, weights, train_loader, batch_size,
             optimizer.zero_grad()
             output, out_fc, out_neigh = net(data)[:3]
             loss = CrossEntropy2d(output, target, weight=weights)
-            loss_fc1 = CrossEntropy2d(out_fc[0], Variable(torch.from_numpy(target1).cuda()), weight=compute_class_weight(target1).cuda())
-            loss_fc2 = CrossEntropy2d(out_fc[1], Variable(torch.from_numpy(target2).cuda()), weight=compute_class_weight(target2).cuda())
-            loss_fc3 = CrossEntropy2d(out_fc[2], Variable(torch.from_numpy(target3).cuda()), weight=compute_class_weight(target3).cuda())
+            loss_fc1 = CrossEntropy2d(out_fc[0], Variable(torch.from_numpy(target1).type(torch.LongTensor).cuda()), weight=compute_class_weight(target1).cuda())
+            loss_fc2 = CrossEntropy2d(out_fc[1], Variable(torch.from_numpy(target2).type(torch.LongTensor).cuda()), weight=compute_class_weight(target2).cuda())
+            loss_fc3 = CrossEntropy2d(out_fc[2], Variable(torch.from_numpy(target3).type(torch.LongTensor).cuda()), weight=compute_class_weight(target3).cuda())
             pairwise_loss = CrossEntropy2d(out_neigh, target, weight=weights)
             loss = (loss + loss_fc1 + loss_fc2 + loss_fc3) / 4 + pairwise_loss
             loss.backward()
@@ -88,6 +88,5 @@ def train(net, optimizer, epochs, save_epoch, weights, train_loader, batch_size,
 
         if e % save_epoch == 0:
             # We validate with the largest possible stride for faster computing
-            acc = test(net, test_ids, stride=min(window_size), batch_size=batch_size, window_size=window_size, all=False)
-            torch.save(net.state_dict(), output_folder + 'training/test_epoch{}_{}'.format(e, acc))
-    torch.save(net.state_dict(), output_folder + 'training/test_final')
+            torch.save(net.state_dict(), output_folder + '/test_epoch{}'.format(e))
+    torch.save(net.state_dict(), output_folder + '/test_final')

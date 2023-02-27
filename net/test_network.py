@@ -8,12 +8,11 @@ Created on Sun Apr  3 19:29:23 2022
 import numpy as np
 from skimage import io
 from utils.utils_dataset import *
-from tqdm import tqdm_notebook as tqdm
+from tqdm import tqdm
 from utils.utils import *
 import torch
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
-from IPython.display import clear_output
 
 
 def test(net, test_ids, test_images, test_labels, eroded_labels, classes, stride, batch_size, window_size, all=False):
@@ -40,7 +39,6 @@ def test(net, test_ids, test_images, test_labels, eroded_labels, classes, stride
                     plt.imshow(convert_to_color(_pred))
                     fig.add_subplot(1,3,3)
                     plt.imshow(gt)
-                    clear_output()
                     plt.show()
                     
             # Build the tensor
@@ -61,7 +59,6 @@ def test(net, test_ids, test_images, test_labels, eroded_labels, classes, stride
         pred = np.argmax(pred, axis=-1)
 
         # Display the result
-        clear_output()
         
         fig = plt.figure()
         fig.add_subplot(1,3,1)
@@ -75,7 +72,6 @@ def test(net, test_ids, test_images, test_labels, eroded_labels, classes, stride
         all_preds.append(pred)
         all_gts.append(gt_e)
         
-        clear_output()
         # Compute some metrics
         metrics(pred.ravel(), gt_e.ravel(), classes)
         accuracy = metrics(np.concatenate([p.ravel() for p in all_preds]), np.concatenate([p.ravel() for p in all_gts]).ravel(), classes)

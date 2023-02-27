@@ -99,7 +99,7 @@ class ISPRS_dataset(torch.utils.data.Dataset):
                     label = np.asarray(conn_comp(convert_from_color(io.imread(self.label_files[random_idx])), self.gt_modification), dtype='int64')
                 elif self.gt_type == 'ero':
                     label = np.asarray(erode_gt(convert_from_color(io.imread(self.label_files[random_idx])), self.gt_modification), dtype='int64')
-                else:
+                elif self.gt_type == 'full':
                     label = np.asarray(convert_from_color(io.imread(self.label_files[random_idx])), dtype='int64')
             else:
                 label = np.asarray(convert_from_color(io.imread(self.label_files[random_idx])), dtype='int64')
