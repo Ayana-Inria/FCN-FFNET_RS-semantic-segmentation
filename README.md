@@ -27,7 +27,7 @@ The code was built on a virtual environment running on Python 3.9
 ### Step 1: Clone the repository
 
 ```
-git clone https://github.com/Ayana-Inria/FCN-FFNET_RS-semantic-segmentation.git
+git clone --recursive https://github.com/Ayana-Inria/FCN-FFNET_RS-semantic-segmentation.git
 ```
 
 ### Step 2: Clone the repository
