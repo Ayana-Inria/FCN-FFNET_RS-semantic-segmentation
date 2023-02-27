@@ -34,8 +34,8 @@ git clone https://github.com/Ayana-Inria/FCN-FFNET_RS-semantic-segmentation.git
 
 ```
 cd FCN-FFNET_RS-semantic-segmentation
-pip install -r requirements.txt
 
+pip install -r requirements.txt
 ```
 
 ### Step 3: Run the code
