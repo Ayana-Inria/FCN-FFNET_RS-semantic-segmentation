@@ -85,7 +85,7 @@ input
 
 ## License
 
-The code is released under the GPLv3 license. See `LICENSE.md` for more details.
+The code is released under the GPL-3.0-only license. See `LICENSE.md` for more details.
 
 ## Acknowledgements
 
