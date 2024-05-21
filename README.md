@@ -4,7 +4,7 @@ This repository contains the code related to the paper:
 
 M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images," 2022 IEEE International Conference on Image Processing, 2022, [https://hal.inria.fr/hal-03720693](https://hal.inria.fr/hal-03720693).
 
-When using this work, please cite our IEEE TGRS Journal paper:
+When using this work, please cite our IEEE ICIP'22 conference paper:
 
 M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and feedforward networks for the semantic segmentation of remotely sensed images," in IEEE International Conference on Image Processing, Bordeaux, France, 2022. 
 
