@@ -20,17 +20,17 @@ M. Pastorino, G. Moser, S. B. Serpico, and J. Zerubia, "Fully convolutional and 
   doi={}}
 ```
 
-## Installation
+## :carousel_horse: Installation
 
 The code was built on a virtual environment running on Python 3.9
 
-### Step 1: Clone the repository
+### :clock1: Step 1: Clone the repository
 
 ```
 git clone --recursive https://github.com/Ayana-Inria/FCN-FFNET_RS-semantic-segmentation.git
 ```
 
-### Step 2: Clone the repository
+### :clock2: Step 2: Clone the repository
 
 ```
 cd FCN-FFNET_RS-semantic-segmentation
@@ -38,7 +38,7 @@ cd FCN-FFNET_RS-semantic-segmentation
 pip install -r requirements.txt
 ```
 
-### Step 3: Run the code
+### :clock3: Step 3: Run the code
 
 1. Train the model on a scarce GT set 
 
@@ -52,7 +52,7 @@ python main.py -g full
 ```
 
 
-## Project structure
+## :roller_coaster: Project structure
 
 ```
 semantic_segmentation
@@ -66,7 +66,7 @@ semantic_segmentation
 └── main.py - program to run
 ```
   
-## Data
+## :bento: Data
 
 The model is trained on the [ISPRS Vaihingen dataset](http://www2.isprs.org/commissions/comm3/wg4/2d-sem-label-vaihingen.html) and [ISPRS Potsdam dataset](http://www2.isprs.org/potsdam-2d-semantic-labeling.html). The two datasets consist of VHR optical images (spatial resolutions of 9 and 5cm, respectively), we used the IRRG channels. They can be downloaded on [Kaggle](https://www.kaggle.com/datasets/bkfateam/potsdamvaihingen) and should be inserted in the folder `/input`.
 
@@ -83,11 +83,11 @@ input
 ```
 
 
-## License
+## :new_moon_with_face: License
 
 The code is released under the GPL-3.0-only license. See `LICENSE.md` for more details.
 
-## Acknowledgements
+## :wind_face: Acknowledgements
 
 This work was conducted during my joint PhD at [INRIA](https://team.inria.fr/ayana/team-members/), d'Université Côte d'Azur and at the [University of Genoa](http://phd-stiet.diten.unige.it/). 
 The ISPRS 2D Semantic Labeling Challenge Datasets were provided by the German Society for Photogrammetry, Remote Sensing and Geoinformation (DGPF).
